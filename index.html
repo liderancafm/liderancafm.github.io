@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rádio Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.webp" alt="Logo da Rádio" class="logo">
+        <h1>Liderança FM - 87,9MHz</h1>
+        <p class="description">
+            Tá na Líderança FM, Tá na Melhor!    
+        </p>
+        
+        <div class="player-container">
+            <div class="controls">
+                <button class="play-btn" id="playPauseBtn">
+                    <i class="fas fa-play" id="playIcon"></i>
+                </button>
+                <div class="volume-control">
+                    <i class="fas fa-volume-up"></i>
+                    <input type="range" min="0" max="100" value="80" class="volume-slider" id="volumeControl">
+                </div>
+            </div>
+            
+            <div class="now-playing">
+                <span class="status"></span>
+                <span id="statusText">Carregando...</span>
+            </div>
+            <br/>
+            <div class="autoplay-note">
+                <p>Nota: O autoplay pode ser bloqueado por alguns navegadores. Se a reprodução não iniciar automaticamente, clique no botão play.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            &copy; 2025 Liderança FM - 87,9MHz. Todos os direitos reservados.
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
